@@ -9,7 +9,7 @@ inputs:
     default: 19.03
   lnmp_services:
     description: lnmp services
-    default: nginx mysql php redis
+    default: nginx mysql php7 redis
   lrew_include:
     description: LREW package
     default: pcit
