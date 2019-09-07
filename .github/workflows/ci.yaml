@@ -22,6 +22,9 @@ jobs:
         # uses: khs1994-docker/actions-setup-lnmp@master
         with:
           lnmp_branch: ${{ matrix.lnmp_branch }}
+      - name: Init LNMP
+        run: |
+          lnmp-docker compose --official -f
       - name: Up
         run: |
           set -x
